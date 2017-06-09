@@ -26,10 +26,7 @@
 						Het is je gelukt! Welkom bij jouw eigen wallet op de blockchain. Klik hieronder op 'Bekijk saldo wallet' om te kijken of jij de Samsung Galaxy S8 met NFC hebt gewonnen!
 					</p>
 					<p>
-						<small>Door te klikken op de knop 'Bekijk saldo wallet' ga je akkoord met de actievoorwaarden. De actievoorwaarden vind je wanneer je verder naar beneden 
-
-scrollt</small>.
-
+						<small>Door te klikken op de knop 'Bekijk saldo wallet' ga je akkoord met de actievoorwaarden. De actievoorwaarden vind je wanneer je verder naar beneden scrollt</small>.
 					</p>
 					<p>
 						<button class="btn btn-lg btn-block btn-success" type="button" onclick="start()">Bekijk saldo wallet</button>
@@ -166,7 +163,6 @@ scrollt</small>.
 			ajax.send(url, callback, 'POST', query.join('&'), async);
 		};
 
-
 		// End code by David Neilsen
 
 		// Start code by Ashley Ford
@@ -198,13 +194,16 @@ scrollt</small>.
 		function processResults(result) {
 			document.getElementById('jumbotron').style.display = 'none';
 			if (result >= 1) {
-				document.getElementById("alertdiv").innerHTML = '<div class="alert alert-success"><h4>Jouw wallet is gevuld!</h4><p>Die Samsung Galaxy S8 is voor<strong>jou</strong>!</p><p>En je maakt kans op een gratis blockchain workshop. Aangeboden door de blockchain experts van KPN.</p><p>Volg onderstaand stappenplan om je prijs te claimen. </p></div>';
+				document.getElementById("alertdiv").innerHTML = '<div class="alert alert-success"><h4>Jouw wallet is gevuld!</h4><p>Die Samsung Galaxy S8 is voor <strong>jou</strong>!</p><p>En je maakt kans op een gratis blockchain workshop. Aangeboden door de blockchain experts van KPN.</p><p>Zo claim je je prijs:</p><p><ol style="list-style: decimal inside;"><li>Neem contact op met Lienke via <a href="mailto:lienke.vet@kpn.com">lienke.vet@kpn.com</a> of <span style="white-space:nowrap">+31 6 10 96 22 01;</span></li><li>Verzilver je token door deze over te maken naar een KPN wallet die je van Lienke ontvangen hebt;</li><li>Je krijgt je Samsung Galaxy S8 thuisgestuurd.</li></ol></p><p>Weet je niet hoe je de token kunt overmaken? Geen probleem Lienke helpt je hierbij.</p></div>';
 			}
 			else {
 				document.getElementById("alertdiv").innerHTML = '<div class="alert alert-warning"><h4>Helaas... Je wallet is leeg.</h4><p>Je hebt de Samsung Galaxy S8 niet gewonnen maar… Je maakt nog steeds kans op een gratis blockchain workshop aangeboden door de blockchain experts van KPN.</p><p>Kom naar de KPN stand voor meer informatie.</p></div>';
 			}
 		}
 	</script>
+	
+	
+
 
 </body>
 </html>
