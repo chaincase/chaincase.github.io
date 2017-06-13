@@ -23,7 +23,7 @@
 						Hi blockchain innovator!
 					</h2>
 					<p>
-						Het is je gelukt! Welkom bij jouw eigen wallet op de blockchain. Klik hieronder op 'Bekijk saldo wallet' om te kijken of jij de Samsung Galaxy S8 met NFC hebt gewonnen!
+						Het is je gelukt! Welkom bij jouw eigen wallet op de blockchain. Klik hieronder op 'Bekijk saldo wallet' om te kijken of jij de Samsung Galaxy S8 met NFC hebt gewonnen. Geschikt voor o.a  contactloze diensten als betalen, OV-chipkaart en toegangsverlening, dankzij een beveiligde opslag op een KPN SIM kaart.
 					</p>
 					<p>
 						<small>Door te klikken op de knop 'Bekijk saldo wallet' ga je akkoord met de actievoorwaarden. De actievoorwaarden vind je wanneer je verder naar beneden scrollt</small>.
@@ -33,6 +33,7 @@
 					</p>
 				</div>
 				<div id="alertdiv"></div>
+				<div id="legal" style="color:#A0A0A0">
 				<p>
 					<strong>Actievoorwaarden</strong><br>
 					<strong>KPN – Blockchain Innovation Promo actie </strong><br>
@@ -87,7 +88,7 @@
 					25. Door deelname aan de actie verklaart de deelnemer in te stemmen met deze actievoorwaarden.<br> 
 					26. Deze actie voldoet aan de Gedragscode Promotionele Kansspelen 2014.<br>
 				</p>
-				<br>
+				</div>
 				<br>
 				<address>
 					<strong>KPN New Business</strong><br><a href=" http://kpninnovatie.nl/kpn-new-business"> http://kpninnovatie.nl/kpn-new-business</a><br> Maanplein 55<br> 2516 CK Den Haag<br> <abbr title="Phone">P:</abbr> 070 343 4343
@@ -193,6 +194,7 @@
 
 		function processResults(result) {
 			document.getElementById('jumbotron').style.display = 'none';
+			document.getElementById('legal').style.display = 'none';
 			if (result >= 1) {
 				document.getElementById("alertdiv").innerHTML = '<div class="alert alert-success"><h4>Jouw wallet is gevuld!</h4><p>Die Samsung Galaxy S8 is voor <strong>jou</strong>!</p><p>En je maakt kans op een gratis blockchain workshop. Aangeboden door de blockchain experts van KPN.</p><p>Zo claim je je prijs:</p><p><ol style="list-style: decimal inside;"><li>Neem contact op met Lienke via <a href="mailto:lienke.vet@kpn.com">lienke.vet@kpn.com</a> of <span style="white-space:nowrap">+31 6 10 96 22 01;</span></li><li>Verzilver je token door deze over te maken naar een KPN wallet die je van Lienke ontvangen hebt;</li><li>Je krijgt je Samsung Galaxy S8 thuisgestuurd.</li></ol></p><p>Weet je niet hoe je de token kunt overmaken? Geen probleem Lienke helpt je hierbij.</p></div>';
 			}
